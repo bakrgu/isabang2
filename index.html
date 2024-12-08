@@ -1,0 +1,453 @@
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Language" content="ko">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<title>청소견적 비교 이사방</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="keywords" content="포장이사,이사,이삿짐센터,포장이사견적,이사비용,포장이사잘하는곳,이사가격비교,서울포장이사,인천포장이사,수원포장이사,부산포장이사"/>
+<meta name="description" content="포장이사,이사,이삿짐센터,포장이사견적,이사비용,포장이사잘하는곳,이사가격비교,서울포장이사,인천포장이사,수원포장이사,부산포장이사"/>
+
+<!-- 복사 -->
+<link rel="stylesheet" href="./clean1/style.css" type="text/css">
+<link rel="stylesheet" href="./clean1/1_clean.css?tm=1.6" type="text/css">
+<script type="text/javascript" src="./clean1/util.js?API_VER=1.0"></script>
+<link rel="stylesheet" type="text/css" href="./clean1/xeicon.min.css" />
+<!-- 복사 -->
+
+<script src="https://tenping.kr/scripts/cpa/tenping.cpa.V2_Domain.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript">
+var noday = [];
+var flags = {'nosvc': '1', 'chkday': '1', 'chkdup': '1', 'chkpcs': ''};
+var _Areas = [["서울",["종로구","중구","용산구","성동구","광진구","동대문구","중랑구","성북구","강북구","도봉구","노원구","은평구","서대문구","마포구","양천구","강서구","구로구","금천구","영등포구","동작구","관악구","서초구","강남구","송파구","강동구"]],["부산",["중구","서구","동구","영도구","부산진구","동래구","남구","북구","해운대구","사하구","금정구","강서구","연제구","수영구","사상구","기장군"]],["대구",["중구","동구","서구","남구","북구","수성구","달서구","달성군"]],["인천",["중구","동구","남구","미추홀구","연수구","남동구","부평구","계양구","서구","강화군","옹진군"]],["광주",["동구","서구","남구","북구","광산구"]],["대전",["동구","중구","서구","유성구","대덕구"]],["울산",["중구","남구","동구","북구","울주군"]],["세종",[]],["경기",["수원시","수원시 장안구","수원시 권선구","수원시 팔달구","수원시 영통구","성남시","성남시 수정구","성남시 중원구","성남시 분당구","안양시","안양시 만안구","안양시 동안구","부천시","부천시 원미구","부천시 소사구","부천시 오정구","안산시","안산시 상록구","안산시 단원구","용인시","용인시 처인구","용인시 기흥구","용인시 수지구","광명시","평택시","과천시","오산시","시흥시","군포시","의왕시","하남시","이천시","안성시","김포시","화성시","광주시","여주시","양평군","고양시","고양시 덕양구","고양시 일산동구","고양시 일산서구","의정부시","동두천시","구리시","남양주시","파주시","양주시","포천시","연천군","가평군"]],["강원",["춘천시","원주시","강릉시","동해시","태백시","속초시","삼척시","홍천군","횡성군","영월군","평창군","정선군","철원군","화천군","양구군","인제군","고성군","양양군"]],["충북",["청주시","청주시 상당구","청주시 서원구","청주시 흥덕구","청주시 청원구","충주시","제천시","보은군","옥천군","영동군","진천군","괴산군","음성군","단양군","증평군"]],["충남",["천안시","천안시 동남구","천안시 서북구","공주시","보령시","아산시","서산시","논산시","계룡시","당진시","금산군","부여군","서천군","청양군","홍성군","예산군","태안군"]],["전북",["전주시","전주시 완산구","전주시 덕진구","군산시","익산시","정읍시","남원시","김제시","완주군","진안군","무주군","장수군","임실군","순창군","고창군","부안군"]],["전남",["목포시","여수시","순천시","나주시","광양시","담양군","곡성군","구례군","고흥군","보성군","화순군","장흥군","강진군","해남군","영암군","무안군","함평군","영광군","장성군","완도군","진도군","신안군"]],["경북",["포항시","포항시 남구","포항시 북구","경주시","김천시","안동시","구미시","영주시","영천시","상주시","문경시","경산시","군위군","의성군","청송군","영양군","영덕군","청도군","고령군","성주군","칠곡군","예천군","봉화군","울진군","울릉군"]],["경남",["창원시","창원시 의창구","창원시 성산구","창원시 마산합포구","창원시 마산회원구","창원시 진해구","진주시","통영시","사천시","김해시","밀양시","거제시","양산시","의령군","함안군","창녕군","고성군","남해군","하동군","산청군","함양군","거창군","합천군"]],["제주",["제주시","서귀포시"]]];
+var _Nosvc_Areas = ["강원 속초시","강원 횡성군","강원 영월군","강원 평창군","강원 정선군","강원 고성군","강원 양양군","강원 원주시","강원 홍천군","강원 강릉시","강원 속초시","경북 청도군","경북 영주시","경북 상주시","경북 의성군","경북 영덕군","경북 예천군","경북 봉화군","경북 고령군","경북 안동시","경북 울릉군","경북 경주시","경남 밀양시","경남 남해군","경남 산청군","경남 함양군","경남 거창군","경남 통영시","경남 거제시","전북 정읍시","전북 남원시","전북 무주군","전북 고창군","전북 순창군","전남 목포시","전남 여수시","전남 나주시","전남 광양시","전남 담양군","전남 곡성군","전남 장흥군","전남 해남군","전남 영암군","전남 무안군","전남 영광군","전남 장성군","전남 완도군","전남 영암군","전남 강진군","전남 광양군","전남 진도군","전남 완도군","충북 영동군","충북 진천군","충북 단양군","충북 제천시","충북 음성군","충남 공주시","충남 논산시","충남 금산군","충남 부여군","충남 서천군","충남 태안군","경기 포천시","경기 동두천시","경기 양주시","서울 관악구","서울 동작구","서울 도봉구"];
+var Frm = {};
+$( function(){
+	$( ".datepicker" ).datepicker({
+		changeYear: true,
+		changeMonth: true,
+		yearRange: "-0:+1",
+		showMonthAfterYear: true,
+		dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
+		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+		monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'],
+		monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+		dateFormat: "yy-mm-dd",
+		minDate: 1,
+		maxDate: 60,
+	}).on('change', function(){
+		if(flags.chkday!='' && noday.indexOf(this.value)>=0){ alert('해당 일자는 서비스 예약이 마감되어서 견적신청을 하실 수 없습니다.'); this.value=''; }
+	});
+});
+function area_subsel(o, t){
+	for(var i=t.options.length-1; i>0; i--) t.remove(i);
+	if(o.value!=""){
+		for(var k=0; k<_Areas.length; k++){
+			if(_Areas[k][0]==o.value){
+				for(var i=0; i<_Areas[k][1].length; i++){
+					var option = document.createElement('option');
+					option.value = _Areas[k][1][i];
+					option.text = _Areas[k][1][i];
+					t.options.add(option);
+				}
+				break;
+			}
+		}
+	}
+}
+function check_no_svc_area(e1, e2){
+	if(flags.nosvc!=''){
+		if(e2==null) e2 = "";
+		var addr = e1 + ' ' + e2;
+		for(var i in _Nosvc_Areas){
+			var nosvc = _Nosvc_Areas[i];
+			if(nosvc=='') continue;
+			if(nosvc.indexOf(addr, 0)!=-1){
+				alert('죄송합니다.\n' + addr + ' 지역은 서비스가 불가능한 곳 입니다.');
+				return false;
+			}
+		}
+	}
+	return true;
+}
+function check_form(frm){
+	try{
+		if(!frm.agree_ok.checked){ alert('개인정보취급방침동의에 체크를 하셔야 합니다.'); frm.agree_ok.focus(); return false; }
+		if(frm.name.value==""){alert('이름을 입력하세요.'); frm.name.focus(); return false; }
+		if(frm.pcs.value==""){alert('전화번호를 입력하세요.'); frm.pcs.focus(); return false; }
+		if(frm.svc_date.value==""){alert('청소일자를 입력하세요.'); frm.svc_date.focus(); return false; }
+		if(flags.chkday!='' && noday.indexOf(frm.svc_date.value)>=0){ alert('해당 일자는 서비스 예약이 마감되어서 견적신청을 하실 수 없습니다.'); frm.svc_date.focus(); return false; }
+		if(frm.f_addr1_1.value==""){alert('주소를 선택하세요.'); frm.f_addr1_1.focus(); return false; }
+		if(!check_no_svc_area(frm.f_addr1_1.value, frm.f_addr1_2.value)) return false; // 서비스불가지역 검사
+		if(flags.chkpcs!=''){
+			Frm.pcs = frm.pcs.value;
+			Frm.form = frm;
+			var fc = openWinS('../land_common_post.php?cmd=post_form', 500, 400, 'SMS_REGULAR_TRANSMIT_WIN', 'yes');
+			return false;
+		}
+	}catch(e){
+		alert(e.message);
+		console.log(e);
+		return false;
+	}
+	return true;
+}
+function add_remove(tar, st, val){
+	var tmp = tar.value.split(', ');
+	for(var i=0; i<tmp.length; i++){
+		if(tmp[i]==val) tmp[i] = null;
+	}
+	if(st){
+		tmp[ tmp.length ] = val;
+	}
+	var str = '';
+	for(var i=0; i<tmp.length; i++){
+		if(tmp[i] != null && tmp[i] != ""){
+			str += (str!=""?", ":"") + tmp[i];
+		}
+	}
+	tar.value = str;
+}
+function check_form_first(frm){
+	if(frm.svc_date.value==""){alert('청소일자를 입력하세요.'); frm.svc_date.focus(); return false; }
+	if(frm.f_addr1_1.value==""){alert('출발지주소를 선택하세요.'); frm.f_addr1_1.focus(); return false; }
+	if(!check_no_svc_area(frm.f_addr1_1.value, frm.f_addr1_2.value)) return false; // 서비스불가지역 검사
+	$('.form_box.hidden').show();
+	$('.form_box.show').hide();
+	frm.name.focus();
+}
+function req_tab_sel(st){
+	if(st==1){
+		$('#id_tab1').removeClass('on').addClass('on');
+		$('#id_tab2').removeClass('on');
+		$('#id_tab3').removeClass('on');
+		$('#id_display_tab1').css({'display':''});
+		$('#id_display_tab2').css({'display':'none'});
+		$('#id_display_tab3').css({'display':'none'});
+	}else if(st==2){
+		$('#id_tab1').removeClass('on');
+		$('#id_tab2').removeClass('on').addClass('on');
+		$('#id_tab3').removeClass('on');
+		$('#id_display_tab1').css({'display':'none'});
+		$('#id_display_tab2').css({'display':''});
+		$('#id_display_tab3').css({'display':'none'});
+	}else if(st==3){
+		$('#id_tab1').removeClass('on');
+		$('#id_tab2').removeClass('on');
+		$('#id_tab3').removeClass('on').addClass('on');
+		$('#id_display_tab1').css({'display':'none'});
+		$('#id_display_tab2').css({'display':'none'});
+		$('#id_display_tab3').css({'display':''});
+	}else{
+	}
+}
+</script>
+
+</head>
+<body>
+<script>
+jQuery(document).ready(function($) {
+	$(".scroll").click(function(event){
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top-90}, 500);
+	});
+});
+</script>
+<link href="./clean1/aos.css" rel="stylesheet">
+<script src="./clean1/aos.js"></script>
+<script>AOS.init();</script>
+
+<div class="header">
+	<div class="logo"><img src="clean1/logo.png"></div>
+
+	<div class="tinnwrap">
+		<div class="vsl-txt">
+			<i>야무지게 <b>비교</b>하고,</i>
+			<span>깔끔하게 <b>청소</b>하자!</span>
+		</div>
+
+		<div class="vsl-righ">
+			<div class="form-wrap">
+				<form action="https://formspree.io/f/manyzqkn" method="post" onsubmit="return check_form(this)">
+				
+				<div class="form_box">
+					<h2>우리집 청소비용 알아보기</h2>
+					<div class="form1set">
+						<div class="form1ftitle">고객명</div>
+						<div class="form1finput"><input type="text" name="name" placeholder="이름" value="" class="iptStyle" autocomplete="off"></div>
+					</div>
+
+					<div class="form1set">
+						<div class="form1ftitle">연락처</div>
+						<div class="form1finput">
+							<input type="tel" name="pcs" placeholder="번호'-'없이 입력" value="" onkeyup="phoneNumber(this)" onkeydown="return checkNum(event)" class="iptStyle" maxlength="15" autocomplete="off">
+						</div>
+					</div>
+
+					<div class="form1set">
+						<div class="form1ftitle">청소일</div>
+						<div class="form1finput">
+							<input type="text" name="svc_date" placeholder="청소일자" value="" maxlength="10" class="iptStyle datepicker" autocomplete="off">
+						</div>
+					</div>
+
+					<div class="form1set">
+						<div class="form1ftitle">주 소</div>
+						<div class="form1finput">
+							<select name="f_addr1_1" class="iptStyle" style="width:49% !important;" onchange="area_subsel(this, this.form.f_addr1_2)">
+								<option value="">주소선택</option>
+																	<option value="서울">서울																	<option value="부산">부산																	<option value="대구">대구																	<option value="인천">인천																	<option value="광주">광주																	<option value="대전">대전																	<option value="울산">울산																	<option value="세종">세종																	<option value="경기">경기																	<option value="강원">강원																	<option value="충북">충북																	<option value="충남">충남																	<option value="전북">전북																	<option value="전남">전남																	<option value="경북">경북																	<option value="경남">경남																	<option value="제주">제주															</select>
+							<select name="f_addr1_2" class="iptStyle" style="width:49%;">
+								<option value="">시/도/군</option>
+							</select>
+						</div>
+					</div>
+
+					<!--<div class="form1set">
+						<div class="form1ftitle">도착지</div>
+						<div class="form1finput">
+							<select name="t_addr1_1" class="iptStyle" style="width:49%;" onchange="area_subsel(this, this.form.t_addr1_2)">
+								<option value="">도착지선택</option>
+																	<option value="서울">서울																	<option value="부산">부산																	<option value="대구">대구																	<option value="인천">인천																	<option value="광주">광주																	<option value="대전">대전																	<option value="울산">울산																	<option value="세종">세종																	<option value="경기">경기																	<option value="강원">강원																	<option value="충북">충북																	<option value="충남">충남																	<option value="전북">전북																	<option value="전남">전남																	<option value="경북">경북																	<option value="경남">경남																	<option value="제주">제주															</select>
+							<select name="t_addr1_2" class="iptStyle" style="width:49%;">
+								<option value="">시/도/군</option>
+							</select>
+						</div>
+					</div>
+					<div class="form1set">
+						<div class="form1ftitle">부가서비스</div>
+						<div class="form1finput">
+							<input type="checkbox" name="value_svc_1" value="1" id="value_svc_1_01"> <label for="value_svc_1_01">입주청소 상담</label>
+							&nbsp;
+							<input type="checkbox" name="value_svc_4" value="4" id="value_svc_1_02"> <label for="value_svc_1_02">인터넷가입 상담</label>
+						</div>
+					</div> -->
+
+					<div class="form2set">
+						<input id="agree_tr_ok" type="checkbox" value="1" name="agree_ok" checked> 
+						<label for="agree_tr_ok">개인정보수집 및 활용동의</label>
+						<a href="#">[보기]</a> 
+                        <!-- <a href="#" onclick="openWinSr('/layout/popup/land_private.html', 1000, 800, 'AGREEMENT_WIN', 'yes');return false;">[보기]</a>  -->
+						<!--&nbsp;
+						<input id="agree1_tr_ok" type="checkbox" value="1" name="agree1_ok" checked> <label for="agree_tr_ok2">개인정보제3자제공</label>
+						<a href="#" onclick="openWinSr('/page/html/6sub8.html', 1000, 800, 'AGREEMENT_WIN', 'yes');return false;">[보기]</a></font> -->
+					</div>
+					<div class="form1set">
+						<input type="submit" value="무료견적신청" class="form1_btn">
+					</div>
+				</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+	<div class="vsl_img"><img src="clean1/top_img.png"></div>
+</div>
+
+<div class="good-wrap">
+	<div class="good-inwrap">
+		<div class="info-txt"><img src="clean1/vsl1_info.jpg"></div>
+	</div>
+</div>
+
+<!-- 2024.11 추가 -->
+<style>
+.good-wrap2 { background:url(clean1/n_flow_bg.jpg?tm=1.1) no-repeat top center #f0ece8; width:100%; }
+.good-wrap2 .good-inwrap2 { max-width:1294px; margin:0 auto; background:#f0ece8; }
+.good-wrap2 .good-inwrap2 .info-txt { width:100%; padding:0; }
+.good-wrap2 .good-inwrap2 .info-txt img { width:100%; }
+
+@media screen and (max-width: 1294px){
+	.good-wrap2 { background:none; width:100%; }
+	.good-wrap2 .good-inwrap2 .info-txt { padding:0; }
+}
+</style>
+
+<div class="good-wrap2">
+	<div class="good-inwrap2">
+		<div class="info-txt"><img src="clean1/n_flow.jpg?tm=1.1"></div>
+	</div>
+</div>
+<!-- 2024.11 추가 -->
+
+<div class="attWrapbox">
+	<h2>청소 서비스 종류</h2>
+
+	<ul class="attWrap">
+		<li>
+			<div class="divTxt">입주청소</div>
+			<div class="set">
+				<div class="m_bg"><img src="clean1/clean_1.jpg"></div>
+				<div class="divTxt2">
+					신축건물, 또는 새아파트<br>
+					입주 전 오염물 제거 및<br> 
+					새집증후군 케어
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="divTxt">이사청소</div>
+			<div class="set">
+				<div class="m_bg"><img src="clean1/clean_2.jpg"></div>
+				<div class="divTxt2">
+					기존 거주자가 살던 집의<br>
+					오염공간을 클리닝하고<br>
+					쾌적한 환경으로 이사
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="divTxt">거주청소</div>
+			<div class="set">
+				<div class="m_bg"><img src="clean1/clean_3.jpg"></div>
+				<div class="divTxt2">
+					현재 살고 있는 내집을<br>
+					보다 쾌적하고 깨끗한<br>
+					환경으로 만드는 청소
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+
+<div class="service-wrap">
+	<h2>주요 서비스 내용</h2>
+	<div class="service-img"><img src="clean1/service_info.jpg"></div>
+</div>
+
+
+<div class="que-wrap">
+	<h2>궁금해요 ( Q&A )</h2>
+	<div class="que-img"><img src="clean1/qna_img.png"></div>
+</div>
+
+
+<!-- 
+<div class="flow-wrap">
+	<h2>서비스 신청과정</h2>
+	<div class="flow-img"><img src="clean1/flow_img.jpg"></div>
+	<div class="bg"></div>
+</div>
+-->
+
+<!-- 2024.11 추가 -->
+<style>
+.good-wrap3 { background:url(clean1/n_info_bg.jpg?tm=1.1) no-repeat top center #f0ece8; width:100%; }
+.good-wrap3 .good-inwrap3 { max-width:1294px; margin:0 auto; background:#f0ece8; }
+.good-wrap3 .good-inwrap3 .info-txt { width:100%; padding:0; }
+.good-wrap3 .good-inwrap3 .info-txt img { width:100%; }
+
+@media screen and (max-width: 1294px){
+	.good-wrap3 { background:none; width:100%; }
+	.good-wrap3 .good-inwrap3 .info-txt { padding:0; }
+}
+</style>
+
+<div class="good-wrap3">
+	<div class="good-inwrap3">
+		<div class="info-txt"><img src="clean1/n_info.jpg?tm=1.1"></div>
+	</div>
+</div>
+<!-- 2024.11 추가 -->
+
+
+<div class="btm-form">
+	<h2>우리집 청소비용 알아보기</h2>
+	<div class="btm-formBox">
+
+		<div class="form-wrap-btm">
+			<form action="https://formspree.io/f/manyzqkn" method="post" onsubmit="return check_form(this)">
+			<div class="form_box">
+
+				<div class="form1set">
+					<div class="form1ftitle">고객명</div>
+					<div class="form1finput"><input type="text" name="name" placeholder="이름" value="" class="iptStyle" autocomplete="off"></div>
+				</div>
+
+				<div class="form1set">
+					<div class="form1ftitle">연락처</div>
+					<div class="form1finput">
+						<input type="tel" name="pcs" placeholder="번호'-'없이 입력" value="" onkeyup="phoneNumber(this)" onkeydown="return checkNum(event)" class="iptStyle" maxlength="15" autocomplete="off">
+					</div>
+				</div>
+
+				<div class="form1set">
+					<div class="form1ftitle">청소일</div>
+					<div class="form1finput">
+						<input type="text" name="svc_date" placeholder="청소일자" value="" maxlength="10" class="iptStyle datepicker" autocomplete="off">
+					</div>
+				</div>
+
+				<div class="form1set">
+					<div class="form1ftitle">주 소</div>
+					<div class="form1finput">
+						<select name="f_addr1_1" class="iptStyle" style="width:49% !important;" onchange="area_subsel(this, this.form.f_addr1_2)">
+							<option value="">주소선택</option>
+															<option value="서울">서울															<option value="부산">부산															<option value="대구">대구															<option value="인천">인천															<option value="광주">광주															<option value="대전">대전															<option value="울산">울산															<option value="세종">세종															<option value="경기">경기															<option value="강원">강원															<option value="충북">충북															<option value="충남">충남															<option value="전북">전북															<option value="전남">전남															<option value="경북">경북															<option value="경남">경남															<option value="제주">제주													</select>
+						<select name="f_addr1_2" class="iptStyle" style="width:49%;">
+							<option value="">시/도/군</option>
+						</select>
+					</div>
+				</div>
+
+				<!--<div class="form1set">
+					<div class="form1ftitle">도착지</div>
+					<div class="form1finput">
+						<select name="t_addr1_1" class="iptStyle" style="width:49%;" onchange="area_subsel(this, this.form.t_addr1_2)">
+							<option value="">도착지선택</option>
+															<option value="서울">서울															<option value="부산">부산															<option value="대구">대구															<option value="인천">인천															<option value="광주">광주															<option value="대전">대전															<option value="울산">울산															<option value="세종">세종															<option value="경기">경기															<option value="강원">강원															<option value="충북">충북															<option value="충남">충남															<option value="전북">전북															<option value="전남">전남															<option value="경북">경북															<option value="경남">경남															<option value="제주">제주													</select>
+						<select name="t_addr1_2" class="iptStyle" style="width:49%;">
+							<option value="">시/도/군</option>
+						</select>
+					</div>
+				</div>
+				<div class="form1set">
+					<div class="form1ftitle">부가서비스</div>
+					<div class="form1finput">
+						<input type="checkbox" name="value_svc_1" value="1" id="value_svc_1_011"> <label for="value_svc_1_011">입주청소 상담</label>
+						&nbsp;
+						<input type="checkbox" name="value_svc_4" value="4" id="value_svc_1_021"> <label for="value_svc_1_021">인터넷가입 상담</label>
+					</div>
+				</div>-->
+
+				<div class="form2set">
+					<input id="agree_tr_ok2" type="checkbox" value="1" name="agree_ok" checked> 
+					<label for="agree_tr_ok2">개인정보수집 및 활용동의</label>
+					<a href="#">[보기]</a> 
+                    <!-- <a href="#" onclick="openWinSr('/layout/popup/land_private.html', 1000, 800, 'AGREEMENT_WIN', 'yes');return false;">[보기]</a>  -->
+					<!--&nbsp;
+					<input id="agree1_tr_ok" type="checkbox" value="1" name="agree1_ok" checked> <label for="agree_tr_ok2">개인정보제3자제공</label>
+					<a href="#" onclick="openWinSr('/page/html/6sub8.html', 1000, 800, 'AGREEMENT_WIN', 'yes');return false;">[보기]</a></font> -->
+				</div>
+				<div class="form1set">
+					<input type="submit" value="무료견적신청" class="form1_btn">
+				</div>
+			</div>
+
+			</form>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="footer">
+(주)이사방앤일호차, 대표이사 : 박창국, 사업자등록번호 : 139-81-37366, 전국콜센터 : 인천광역시 남동구 구월로 336<br>
+개인정보관리책임자 : 이성국, 
+통신판매신고번호 : 인천 남동구 제 05-119호, 화물자동차운송주선사업허가증번호 : 남동 4-075<br><br>
+
+Copyright(C) (주)이사방 All Rights Reserved.
+</div>
+
+
+</body>
+</html>
